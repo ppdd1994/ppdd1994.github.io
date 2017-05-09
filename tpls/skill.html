@@ -1,0 +1,10 @@
+<div class="container" ng-controller="skillCtrl">
+    <section class="skill">
+        <div class="block" ng-repeat="skill in skills">
+            <h3>{{skill.name}}</h3>
+            <span ng-repeat="main in skill.contain">
+                {{main}}
+            </span>
+        </div>
+    </section>
+</div>

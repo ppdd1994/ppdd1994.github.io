@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Georgia, "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", "Times New Roman", serif;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #222222;
+}
+.wrapper{
+	width: 100%;
+}
+.topbar{
+	height: 165px;
+    width: 100%;
+}
+.navbar{
+    height: 60px;
+    animation: fresh 0.8s;
+    width: 100%;
+}
+.view{
+	position: absolute;
+    width: 100%;
+    top:225px;
+    bottom: 0;
+}
+.header{
+	width: 100%;
+	height: 165px;
+	flex: 0 0 165px;
+	border-top: 2px solid #333;
+}
+#space-ship {
+    top: 50px;
+    left: 77%;
+    width: 150px;
+    height: 90px;
+    background-image: url("../images/pandara_brand/spaceship.png");
+    animation: fresh 0.8s;
+}
+#planet0 {
+    top: 52px;
+    left: 4%;
+    width: 44px;
+    height: 44px;
+    background-image: url("../images/pandara_brand/planet0.png");
+    animation: fresh 0.8s;
+}
+#earth {
+    top: 62px;
+    left: 9%;
+    width: 145px;
+    height: 103px;
+    background-image: url("../images/pandara_brand/earth.png");
+    animation: fresh 0.8s;
+}
+#planet1 {
+    top: 87px;
+    left: 20%;
+    width: 27px;
+    height: 27px;
+    background-image: url("../images/pandara_brand/planet1.png");
+    animation: fresh 0.8s;
+}
+#planet2 {
+    top: 50px;
+    left: 30%;
+    width: 17px;
+    height: 17px;
+    background-image: url("../images/pandara_brand/planet2.png");
+    animation: fresh 0.8s;
+}
+#planet3 {
+    top: 108px;
+    left: 35%;
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/pandara_brand/planet3.png");
+    animation: fresh 0.8s;
+}
+#satellite {
+    top: 40px;
+    left: 41%;
+    width: 86px;
+    height: 32px;
+    background-image: url("../images/pandara_brand/satellite.png");
+    animation: fresh 0.8s;
+}
+#planet4 {
+    top: 30px;
+    left: 52%;
+    width: 29px;
+    height: 29px;
+    background-image: url("../images/pandara_brand/planet4.png");
+    animation: fresh 0.8s;
+}
+#planet5 {
+    top: 45px;
+    left: 60%;
+    width: 12px;
+    height: 12px;
+    background-image: url("../images/pandara_brand/planet5.png");
+    animation: fresh 0.8s;
+}
+#planet6 {
+    top: 88px;
+    left: 63%;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/pandara_brand/planet6.png");
+    animation: fresh 0.8s;
+}
+.pandara-image {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.header .title{
+	width: 200px;
+	margin:60px auto 25px; 	
+	color: #fff;
+	background: #222;
+	text-align: center;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 40px;
+}
+
+.title .name{
+	margin: 0;
+	padding: 10px;
+	font-size: 24px;
+	font-weight: 700;
+    animation: fresh 0.8s;
+
+}
+@keyframes fresh {
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.nav {
+	height: 60px;
+	padding: 0;
+	text-align: center;
+	padding-top: 20px;
+}
+.nav ul{
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+.nav li{
+	display: inline-block;
+	font-size: 16px;
+	padding: 6px;
+	margin-left: 70px;
+	text-decoration: none;
+}
+.nav li:first-child{
+	margin-left: 0;
+}
+.nav li span{
+	padding-right: 10px;
+}
+
+.container{
+	width: 95%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0px 30px;
+    border-radius: 3px;
+}
+.intro-myself,.skill{
+    padding: 14px 0 10px;
+}
+.education,.experience,.myself{
+    margin-bottom: 14px;
+}
+.intro-myself h3,.skill h3{
+    padding: 6px 0;
+    margin: 0;
+	background-color: rgb(170, 217, 221);
+	border-radius: 8px;
+}
+.intro-myself h3{
+	 width: 110px;
+	 margin-bottom: 5px;
+	 text-align: center;
+ }
+.intro-myself p{
+    padding: 0 3px;
+    margin: 0 0 4px 0;
+    line-height: 20px;
+}
+.skill{
+	font-size: 0;
+	display: flex;
+}
+.skill .block{
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 16px;
+	vertical-align: top;
+	text-align: center;
+	flex: 1;
+}
+.skill .block:first-child{
+	margin-left: 0;
+}
+.skill h3{
+	margin-bottom: 12px;
+}
+.skill span{
+	display: block;
+	padding-bottom: 6px;
+}
+.work-container{
+	width: 100%;
+	height: 100%;
+}
+.work{
+	display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+	width: 100%;
+    background-color: #f1f4f9;
+}
+.item{
+    flex: 0 0 25%;
+    padding: 15px;
+    position: relative;
+}
+.itemwrap{
+    border-radius: 5px;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    padding-bottom: 170px;
+    position: relative;
+}
+.img-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+    position: relative;
+    padding-top: 75%;
+    overflow: hidden;
+}
+.img-wrap img{
+	width: 100%;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+}
+.intro-wrap{
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+}
+.intro-wrap .intro h3{
+    margin-top: 10px;
+}
+.intro-wrap .intro p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+.intro-wrap .intro a:hover{
+     cursor: pointer;
+     color: #21b982;
+ }
+.intro-wrap .showcode a:hover{
+    cursor: pointer;
+    color: #21b982;
+}
+.intro-wrap .showcode{
+    margin-top: 10px;
+    text-align: center;
+}
+.intro-wrap .showcode .button{
+    display: inline-block;
+    padding: 10px 10%;
+    font-weight: bold;
+
+}
+
+
+
+
+

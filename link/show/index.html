@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="main-2.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<div class="itemwrap">
+			<div class="slider">
+		    <div class="main" id="template_main">
+			<div class="main-i" id="tempalte_{{index}}">
+				<img src="imgs-2/{{index}}.jpg" alt="picutre">
+				<div class="caption">
+					<h2>{{h2}}</h2>
+					<h3>{{h3}}</h3>
+				</div>
+			</div>
+		    </div>
+		     <div class="ctrl" id="template_ctrl">
+			<a href="javascript:switchSlider({{index}})" class="ctrl-i" id="ctrl_{{index}}"><img src="imgs-2/{{index}}.jpg"></a>
+		    </div>
+	     </div>
+		</div>
+		<div class="itemwrap">
+			<div class="J-poster slidePic " data-setting='{"width":1000,"height":300}'>
+		       <span class="slide-btn btn-prev"></span>
+		       <ul class="pic-box">
+			<li class="pic-item"><a href="#"><img src="images/1.jpg"></a></li>
+			<li class="pic-item"><a href="#"><img src="images/2.jpg"></a></li>
+			<li class="pic-item"><a href="#"><img src="images/3.jpg"></a></li>
+			<li class="pic-item"><a href="#"><img src="images/4.jpg"></a></li>
+			<li class="pic-item"><a href="#"><img src="images/5.jpg"></a></li>
+			<li class="pic-item"><a href="#"><img src="images/6.jpg"></a></li>
+			<li class="pic-item"><a href="#"><img src="images/3.jpg"></a></li>
+		       </ul>
+		       <span class="slide-btn btn-next"></span>
+	        </div>
+		</div>
+	</div>
+<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="js-2.js"></script>
+<script type="text/javascript">
+$(function() {
+		Carousel.init($(".J-poster"));
+
+		
+});
+</script>
+</body>
+</html>
