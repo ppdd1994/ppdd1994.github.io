@@ -27,7 +27,7 @@ myApp.controller('workCtrl', function ($scope) {
         },
         {
             "name": "仿饿了么APP-商家页",
-            "intro": "使用Vue.js+es6+webpack技术，采用组件化、模块化的开发方式",
+            "intro": "Vue.js+vue-cli+es6+webpack",
             "imgUrl": "images/vue.jpg",
             "codeUrl":"https://github.com/ppdd1994/-app",
             "demoUrl":"http://vuejssellapp.t.imooc.io"
